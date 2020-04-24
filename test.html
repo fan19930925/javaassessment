@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="git.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("#test").load("data.txt");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id ="test">
+		<p>First content</p>
+	</div>
+	<button id="btn">Click</button>
+	<table id="usersTable" class="table table-bordered table-striped table-hover">
+	<tr>
+		<th>Username</th>
+		<th>Photo</th>
+	</tr>	
+
+</table>
+</body>
+</html>
